@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>景天-网络咨询平台</title> 
+		<link rel="shortcut icon" href="images/favicon.png">
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/responsive.css" />
+		<style>
+			#loading{width:100%;height:100%;background:rgba(0,0,0,0.6);position: fixed;top:0;left:0;z-index:10005;display: none;}
+			#loading img{position: absolute;left: 0;top:0;right:0;bottom: 0;margin: auto;}
+		</style>
+	</head>
+	<body>
+		<nav id="header_nav" class="navbar navbar-default navbar-fixed-top">
+        	<div class="container">
+        		<div class="navbar-header">
+        			<a href="#" class="navbar-brand">
+        				<img class="img-responsive" src="images/logo.png" />
+        			</a>
+        			<button class="navbar-toggle" data-toggle="collapse" data-target=".collapse">
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+        			</button>
+        		</div>
+        		<div id="ScrollListener" class="collapse navbar-collapse">
+        			<ul class="nav navbar-nav navbar-right">
+	        			<li><a href="#Homes">首页</a></li>
+	        			<li><a href="#Range">咨询范围</a></li>
+	        			<li><a href="#Introduce">专家介绍</a></li>
+	        			<li><a href="#About">关于我们</a></li>
+        			</ul>
+        		</div>
+        	</div>
+        </nav>
+        
+        <!--<div id="Home" class="text-center">
+        	<div class="overlay">
+        		<div class="home_content">
+        			<h1>构筑企业新一代网络咨询平台</h1>
+	                <p class="lead">Build enterprise new generation network consulting platform</p>
+        		</div>
+        	</div>
+        </div>-->
+        <div id="Homes" class="text-center">
+        	<!--<div style="float:right;" id="hub_iframe"></div>-->
+        	<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			      <div class="swiper-slide">
+			      	<div class="item item1">
+			      		<div class="overlay">
+			      			<div class="home_content">
+			        			<h1>构筑企业新一代网络咨询平台</h1>
+				                <p class="lead">Build Enterprise New Generation Network Consulting Platform</p>
+			        		</div>
+			      		</div>
+			      	</div>
+			      </div>
+			      <div class="swiper-slide">
+			      	<div class="item item2">
+			      		<div class="overlay">
+			      			<div class="home_content">
+			        			<h1>景天速度  分钟级响应</h1>
+				                <p class="lead">Jentop Speed  Minutes Level Response</p>
+			        		</div>
+			      		</div>
+			      	</div>
+			      </div>
+			      <div class="swiper-slide">
+			      	<div class="item item3">
+			      		<div class="overlay">
+			      			<div class="home_content">
+			        			<h1>景天质量  专家级交付</h1>
+				                <p class="lead">Jentop Quality  Experts Level Delivery</p>
+			        		</div>
+			      		</div>
+			      	</div>
+			      </div>
+			    </div>
+			    <!-- Add Pagination -->
+			    <div class="swiper-pagination"></div>
+			     <!-- Add Arrows -->
+			    <!--<div class="swiper-button-next"></div>
+			    <div class="swiper-button-prev"></div>-->
+			</div>
+        </div>
+        
+        <div id="Range" class="text-center">
+        	<div class="container">
+        		<div class="section_title center wow bounceInDown animated" data-wow-delay="0.4s">
+        			<h2>咨 / 询 / 范 / 围</h2>
+					<p>Consultation Scope</p>
+        		</div>
+        		<div class="range_content clearfix">
+        			<div class="col-md-3 col-sm-6 col-xs-6">
+        				<div class="item item1 wow bounceInLeft animated" data-wow-delay="0.5s">
+        					<div class="overlay">
+        						<div class="con">
+        							<span>安全</span>
+        							<div class="bottomLine"></div>
+        							<ul class="txt">
+        								<li>边界安全/数据安全</li>
+        								<li>运维安全/终端安全</li>
+        								<li>邮件系统安全/虚拟化安全</li>
+        							</ul>
+        							<p class="infoBtn">填写信息<i>></i></p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-md-3 col-sm-6 col-xs-6">
+        				<div class="item item2 wow bounceInLeft animated" data-wow-delay="0.4s">
+        					<div class="overlay">
+        						<div class="con">
+        							<span>优化</span>
+        							<div class="bottomLine"></div>
+        							<ul class="txt">
+        								<li>广域网加速/应用优化</li>
+        								<li>应用&链路负载/流量管理</li>
+        							</ul>
+        							<p class="infoBtn">填写信息<i>></i></p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-md-3 col-sm-6 col-xs-6">
+        				<div class="item item3 wow bounceInRight animated" data-wow-delay="0.4s">
+        					<div class="overlay">
+        						<div class="con">
+        							<span>运维管理</span>
+        							<div class="bottomLine"></div>
+        							<ul class="txt">
+        								<li>运维审计/运维监控</li>
+        								<li>资源管理/策略管理</li>
+        								<li>大数据分析</li>
+        							</ul>
+        							<p class="infoBtn">填写信息<i>></i></p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-md-3 col-sm-6 col-xs-6">
+        				<div class="item item4 wow bounceInRight animated" data-wow-delay="0.5s">
+        					<div class="overlay">
+        						<div class="con">
+        							<span>容灾备份</span>
+        							<div class="bottomLine"></div>
+        							<ul class="txt">
+        								<li>数据备份</li>
+        								<li>应用灾备/两地三中心</li>
+        							</ul>
+        							<p class="infoBtn">填写信息<i>></i></p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-md-3 col-sm-6 col-xs-6">
+        				<div class="item item5 wow bounceInRight animated" data-wow-delay="0.4s">
+        					<div class="overlay">
+        						<div class="con">
+        							<span>虚拟化&云计算</span>
+        							<div class="bottomLine"></div>
+        							<ul class="txt">
+        								<li>网络虚拟化/服务器虚拟化</li>
+        								<li>桌面虚拟化/混合云架构</li>
+        							</ul>
+        							<p class="infoBtn">填写信息<i>></i></p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-md-3 col-sm-6 col-xs-6">
+        				<div class="item item6 wow bounceInRight animated" data-wow-delay="0.4s">
+        					<div class="overlay">
+        						<div class="con">
+        							<span>超融合</span>
+        							<p class="infoBtn">填写信息<i>></i></p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-md-3 col-sm-6 col-xs-6">
+        				<div class="item item7 wow bounceInRight animated" data-wow-delay="0.4s">
+        					<div class="overlay">
+        						<div class="con">
+        							<span>容器云</span>
+        							<p class="infoBtn">填写信息<i>></i></p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-md-3 col-sm-6 col-xs-6">
+        				<div class="item item8 wow bounceInRight animated" data-wow-delay="0.4s">
+        					<div class="overlay">
+        						<div class="con">
+        							<span>软件定制</span>
+        							<p class="infoBtn">填写信息<i>></i></p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+        
+        <div id="Introduce" class="text-center">
+        	<div class="container">
+        		<div class="section_title center wow bounceInDown animated" data-wow-delay="0.3s">
+        			<h2>专 / 家 / 介 / 绍</h2>
+					<p>Experts Introduction</p>
+        		</div>
+        		<div class="introduction_content clearfix">
+        			<div class="col-md-3 col-sm-6 col-xs-6">
+        				<div class="item item1 wow bounceInUp animated" data-wow-delay="0.3s">
+        					<div class="pic">
+        						<img src="images/introduction_qdw.png" />
+        					</div>
+    						<div class="info">
+    							<p>齐大伟</p>
+    							<div class="bottomLine"></div>
+    							<div class="txt">清华大学计算机本科，新加坡国立大学计算机博士，4年海外金融行业系统架构师从业经历。</div>
+    							<div class="shadow">
+    								<p>齐大伟</p>
+	    							<div class="bottomLine"></div>
+	    							<div class="txt">清华大学计算机本科，新加坡国立大学计算机博士，4年海外金融行业系统架构师从业经历。</div>
+    							</div>
+    						</div>
+        				</div>
+        			</div>
+        			<div class="col-md-3 col-sm-6 col-xs-6">
+        				<div class="item item1 wow bounceInUp animated" data-wow-delay="0.4s">
+        					<div class="pic">
+        						<img src="images/introduction_jk.png" />
+        					</div>
+    						<div class="info">
+    							<p>金凯</p>
+    							<div class="bottomLine"></div>
+    							<div class="txt">清华大学计算机本科，香港中文大学计算机博士，4年香港金融行业系统架构师从业经历。</div>
+    							<div class="shadow">
+    								<p>金凯</p>
+	    							<div class="bottomLine"></div>
+	    							<div class="txt">清华大学计算机本科，香港中文大学计算机博士，4年香港金融行业系统架构师从业经历。</div>
+    							</div>
+    						</div>
+        				</div>
+        			</div>
+        			<div class="col-md-3 col-sm-6 col-xs-6">
+        				<div class="item item1 wow bounceInUp animated" data-wow-delay="0.6s">
+        					<div class="pic">
+        						<img src="images/introduction_fgx.png" />
+        					</div>
+    						<div class="info">
+    							<p>奉光锡</p>
+    							<div class="bottomLine"></div>
+    							<div class="txt">印度韦洛尔理工大学计算机本科，10余年海外网络安全行业、3年顶级IT咨询机构从业经历 。</div>
+    							<div class="shadow">
+    								<p>奉光锡</p>
+	    							<div class="bottomLine"></div>
+	    							<div class="txt">印度韦洛尔理工大学计算机本科，10余年海外网络安全行业、3年顶级IT咨询机构从业经历 。</div>
+    							</div>
+    						</div>
+        				</div>
+        			</div>
+        			<div class="col-md-3 col-sm-6 col-xs-6">
+        				<div class="item item1 wow bounceInUp animated" data-wow-delay="0.6s">
+        					<div class="pic">
+        						<img src="images/introduction_xc.png" />
+        					</div>
+    						<div class="info">
+    							<p>谢灿</p>
+    							<div class="bottomLine"></div>
+    							<div class="txt">中南大学计算机本科，中科院计算技术研究所硕士，6年大型国有银行系统架构师从业经历。</div>
+    							<div class="shadow">
+    								<p>谢灿</p>
+	    							<div class="bottomLine"></div>
+	    							<div class="txt">中南大学计算机本科，中科院计算技术研究所硕士，6年大型国有银行系统架构师从业经历。</div>
+    							</div>
+    						</div>
+        				</div>
+        			</div>
+        			<div class="col-md-3 col-sm-6 col-xs-6">
+        				<div class="item item1 wow bounceInUp animated" data-wow-delay="0.5s">
+        					<div class="pic">
+        						<img src="images/introduction_lz.png" />
+        					</div>
+    						<div class="info">
+    							<p>刘忠</p>
+    							<div class="bottomLine"></div>
+    							<div class="txt">江苏大学计算机本科，思科高级网络架构师，曾任职中国电信核心骨干网BGP运维5年。</div>
+    							<div class="shadow">
+    								<p>刘忠</p>
+	    							<div class="bottomLine"></div>
+	    							<div class="txt">江苏大学计算机本科，思科高级网络架构师，曾任职中国电信核心骨干网BGP运维5年。</div>
+    							</div>
+    						</div>
+        				</div>
+        			</div>
+        			<div class="col-md-3 col-sm-6 col-xs-6">
+        				<div class="item item1 wow bounceInUp animated" data-wow-delay="0.4s">
+        					<div class="pic">
+        						<img src="images/introduction_xq.png" />
+        					</div>
+    						<div class="info">
+    							<p>谢琪</p>
+    							<div class="bottomLine"></div>
+    							<div class="txt">清华大学计算机本科，中科院计算技术研究所硕士，6年大型股份制银行系统架构师从业经历。</div>
+    							<div class="shadow">
+    								<p>谢琪</p>
+	    							<div class="bottomLine"></div>
+	    							<div class="txt">清华大学计算机本科，中科院计算技术研究所硕士，6年大型股份制银行系统架构师从业经历。</div>
+    							</div>
+    						</div>
+        				</div>
+        			</div>
+        			<div class="col-md-3 col-sm-6 col-xs-6">
+        				<div class="item item1 wow bounceInUp animated" data-wow-delay="0.5s">
+        					<div class="pic">
+        						<img src="images/introduction_cjb.png" />
+        					</div>
+    						<div class="info">
+    							<p>陈锦标</p>
+    							<div class="bottomLine"></div>
+    							<div class="txt">清华大学计算机本科，清华大学计算机硕士，6年互联网行业系统架构师从业经历。</div>
+    							<div class="shadow">
+    								<p>陈锦标</p>
+	    							<div class="bottomLine"></div>
+	    							<div class="txt">清华大学计算机本科，清华大学计算机硕士，6年互联网行业系统架构师从业经历。</div>
+    							</div>
+    						</div>
+        				</div>
+        			</div>
+        			<div class="col-md-3 col-sm-6 col-xs-6">
+        				<div class="item item1 wow bounceInUp animated" data-wow-delay="0.3s">
+        					<div class="pic">
+        						<img src="images/introduction_xxl.png" />
+        					</div>
+    						<div class="info">
+    							<p>熊孝林</p>
+    							<div class="bottomLine"></div>
+    							<div class="txt">华中科技大学电子系硕士，曾任职于华为法国代表处无线产品经理，华为中国地区部政府系统部产品经理等。</div>
+    							<div class="shadow">
+    								<p>熊孝林</p>
+	    							<div class="bottomLine"></div>
+	    							<div class="txt">华中科技大学电子系硕士，曾任职于华为法国代表处无线产品经理，华为中国地区部政府系统部产品经理等。</div>
+    							</div>
+    						</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+        
+		<div id="About" class="text-center">
+        	<div class="container">
+        		<div class="section_title center wow bounceInDown animated" data-wow-delay="0.4s">
+        			<h2>关 / 于 / 我 / 们</h2>
+					<p>About Us</p>
+        		</div>
+        		<div class="about_content wow rollIn animated" data-wow-delay="0.15s">
+        			<p>深圳景天信息技术有限公司是国内顶尖的IT咨询公司，</p>
+        			<p>总部位于美国，在中国大陆、香港、新加坡、欧洲等多个国家和地区都设有分支机构。</p>
+        			<p>景天信息主要覆盖中国华南片区客户的咨询业务，</p>
+        			<p>为客户提供新一代网络设计、咨询、架构的整体解决方案，并帮助客户完成实施交付！</p>
+        			<p>核心咨询业务包括：基础架构运维、网络安全与优化、虚拟化&云计算、下一代数据中心、超融合及容器等。</p>
+        			<p>核心咨询团队均毕业于国内外顶级高校，在国内外知名企业工作多年，拥有丰富的企业数据中心及IT架构的咨询与实施经验。</p>
+        			<p>景天信息郑重承诺，通过本平台提交的所有咨询请求，我们将于1小时内电话回访，如有不尽之处，3天内咨询师上门拜访！</p>
+        		</div>
+        		<div class="about_line"></div>
+        		<div class="contact">
+        			<ul class="clearfix">
+        				<li>
+        					<i></i>
+        					<span>sales@jentop.com</span>
+        				</li>
+        				<li>
+        					<i></i>
+        					<span>400-698-0990</span>
+        				</li>
+        				<li>
+        					<i></i>
+        					<span>深圳市南山区高新南六路6号迈科龙大厦1402室</span>
+        				</li>
+        			</ul>
+        		</div>
+        	</div>
+        </div>
+        
+        <div id="Footer">
+        	<div class="container">
+        		<p>深圳景天信息技术有限公司   版权所有 &emsp;Copyright © 2006-2018</p>
+        	</div>
+        </div>
+        
+        <div id="Shadow">
+        	<div class="form">
+        		<div class="close"><span id="close">x</span></div>
+        		<div class="title">
+			        <div class="text">
+				        <h2>填 / 写 / 信 / 息</h2>
+				        <p>Fill in the information</p>
+			        </div>
+			    </div>
+			    <div class="item">
+			    	<form id="Form">
+			    		<ul>
+							<li class="dropdownMenu">
+								<span>需求类型：</span><input class="needType" type="text" value="" readonly="readonly" />
+								<div id="menu">
+									<ul>
+										<li>安全</li>
+										<li>优化</li>
+										<li>运维管理</li>
+										<li>容灾备份</li>
+										<li>虚拟化&云计算</li>
+										<li>超融合</li>
+										<li>容器云</li>
+										<li>软件定制</li>
+									</ul>
+								</div>
+						 	</li>
+						  	<li>
+								<span>公司名称：</span><input class="companyName" type="text" placeholder="请输入公司名称" />
+						 	</li>
+						 	<li>
+								<span>联系人：</span><input class="contactName" type="text" placeholder="请输入联系人" />
+						 	</li>
+						  	<li>
+								<span>联系方式：</span><input class="contact1" type="text" placeholder="请输入联系方式" />
+						 	 </li>
+						  	<li>
+								<span>邮箱：</span><input class="email" type="text" spellcheck="false" placeholder="请输入邮箱" />
+						 	</li>
+						 	<li>
+								<span>需求内容：</span>
+								<textarea class="demand" placeholder="请填写你的需求内容"></textarea>
+						 	</li>
+						</ul>
+			    	</form>
+			    </div>
+			    <div class="btn">
+			    	<a id="submit" href="javascript:void(0)">提交</a>
+			    </div>
+        	</div>
+        </div>
+        
+        <div id="loading">
+			<img src="images/loading.gif"/>
+		</div>
+        
+        
+		<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="js/swiper-3.4.2.min.js" ></script>
+		<script type="text/javascript" src="js/wow.min.js" ></script>
+		<!--<script type="text/javascript" color="255,255,255" opacity='0.7' zIndex="-2" count="100" src="js/nets.js" ></script>-->
+		<script type="text/javascript" src="js/main.js" ></script>
+		<script type="text/javascript" src="js/ajax.js" ></script>
+		<script type="text/javascript">
+			new WOW().init();
+			
+			// swipper 轮播图
+        	var mySwiper = new Swiper ('.swiper-container', {
+//      		width: 1000,
+//      		height: 370,
+			    direction: "horizontal",
+			    slidesPerView: 1,
+//			    spaceBetween: 70,
+//			    setWrapperSize: true,
+			    loop: true,
+			    loopAdditionalSlides: 1,
+			    autoplay : 5000,
+			    pagination: '.swiper-pagination',
+        		paginationClickable: true,
+			    // 如果需要前进后退按钮
+//			    nextButton: '.swiper-button-next',
+//			    prevButton: '.swiper-button-prev'
+			})   
+			
+//			function async_load() {
+//		        i.scrolling = "no";
+//		        i.frameborder = "0";
+//		        i.border = "0";
+//		        i.setAttribute("frameborder", "0", 0);
+//		        i.width = "100px";
+//		        i.height = "20px";
+//		        document.getElementById("hub_iframe").appendChild(i);
+//		    }
+//		    if (window.addEventListener) {
+//		    	window.addEventListener("load", async_load, false);
+//		    } else if (window.attachEvent) {
+//		    	window.attachEvent("onload", async_load);
+//		    } else {
+//		    	window.onload = async_load;
+//		    }
+		</script>
+	</body>
+</html>
